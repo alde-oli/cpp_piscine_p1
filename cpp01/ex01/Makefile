@@ -1,4 +1,4 @@
-NAME = MyAbsolutelyExtraordinaryAwesomeGreatPhonebook
+NAME = BlackOps2
 
 CXX = g++
 CXXFLAGS = -Wall -Wextra -Werror -std=c++98
@@ -22,12 +22,12 @@ $(OBJDIR):
 	@mkdir -p $(OBJDIR)
 
 $(NAME): $(OBJDIR) $(OBJECTS)
-	@echo -e "$(BLUE)$(BOLD)[ ok ] $(NAME) created$(NC)"
+	@echo -e "$(GREEN)$(BOLD)[ ok ] files compiled$(NC)"
 	@$(CXX) $(CXXFLAGS) -o $(NAME) $(OBJECTS) -I$(INCDIR)
+	@echo -e "$(BLUE)$(BOLD)[ ok ] $(NAME) created$(NC)"
 
 $(OBJDIR)/%.o: $(SRCDIR)/%.cpp
 	@$(CXX) $(CXXFLAGS) -I$(INCDIR) -c $< -o $@
-	@echo -e "$(GREEN)$(BOLD)[ ok ] files compiled$(NC)"
 
 clean:
 	@rm -rf $(OBJDIR)

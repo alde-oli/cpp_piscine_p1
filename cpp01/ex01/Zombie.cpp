@@ -22,6 +22,11 @@ void		Zombie::announceDeath(void)
 	std::cout << this->_name << " miserably died." << std::endl;
 }
 
+std::string	Zombie::setName(std::string name)
+{
+	this->_name = name;
+	return (this->_name);
+}
 
 std::string	Zombie::getName(void)
 {

@@ -1,4 +1,4 @@
-NAME = MyAbsolutelyExtraordinaryAwesomeGreatPhonebook
+NAME = BlackOps3
 
 CXX = g++
 CXXFLAGS = -Wall -Wextra -Werror -std=c++98

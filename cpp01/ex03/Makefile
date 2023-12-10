@@ -1,4 +1,4 @@
-NAME = MyAbsolutelyExtraordinaryAwesomeGreatPhonebook
+NAME = ModernWarfare
 
 CXX = g++
 CXXFLAGS = -Wall -Wextra -Werror -std=c++98

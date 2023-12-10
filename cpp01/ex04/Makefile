@@ -1,4 +1,4 @@
-NAME = MyAbsolutelyExtraordinaryAwesomeGreatPhonebook
+NAME = SearchAndReplace
 
 CXX = g++
 CXXFLAGS = -Wall -Wextra -Werror -std=c++98
@@ -30,7 +30,7 @@ $(OBJDIR)/%.o: $(SRCDIR)/%.cpp
 	@echo -e "$(GREEN)$(BOLD)[ ok ] files compiled$(NC)"
 
 clean:
-	@rm -rf $(OBJDIR)
+	@rm -rf $(OBJDIR) *.replace
 	@echo -e "$(VIOLET)$(BOLD)obj files deleted$(NC)"
 
 fclean: clean

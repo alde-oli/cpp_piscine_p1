@@ -1,4 +1,4 @@
-NAME = MyAbsolutelyExtraordinaryAwesomeGreatPhonebook
+NAME = harlFilter
 
 CXX = g++
 CXXFLAGS = -Wall -Wextra -Werror -std=c++98
