@@ -1,4 +1,4 @@
-NAME = NewType
+NAME = NewType2
 
 CXX = g++
 CXXFLAGS = -Wall -Wextra -Werror -std=c++98

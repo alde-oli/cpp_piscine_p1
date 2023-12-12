@@ -1,4 +1,4 @@
-NAME = NewType3
+NAME = BSP
 
 CXX = g++
 CXXFLAGS = -Wall -Wextra -Werror -std=c++98
