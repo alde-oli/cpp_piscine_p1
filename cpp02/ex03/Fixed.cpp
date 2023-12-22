@@ -9,30 +9,25 @@
 Fixed::Fixed()
 	: _value(0)
 {
-	std::cout << "Default constructor called" << std::endl;
 }
 
 Fixed::Fixed(const Fixed &src)
 {
-	std::cout << "Copy constructor called" << std::endl;
 	*this = src;
 }
 
 Fixed::Fixed(const int value)
 	: _value(value << _bits)
 {
-	std::cout << "Int constructor called" << std::endl;
 }
 
 Fixed::Fixed(const float value)
 	: _value(static_cast<int>(roundf(value * (1 << _bits))))
 {
-	std::cout << "Float constructor called" << std::endl;
 }
 
 Fixed::~Fixed()
 {
-	std::cout << "Destructor called" << std::endl;
 }
 
 //////////////////////////
@@ -41,7 +36,6 @@ Fixed::~Fixed()
 
 Fixed &Fixed::operator=(const Fixed &rhs)
 {
-	std::cout << "Copy assignment operator called" << std::endl;
 	if (this != &rhs)
 		_value = rhs._value;
 	return *this;
