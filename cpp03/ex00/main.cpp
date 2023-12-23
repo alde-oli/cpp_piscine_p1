@@ -1,5 +1,5 @@
 #include <iostream>
-#include "ClapTrap.hpp" // Assurez-vous que cette ligne correspond au nom de votre fichier d'en-tête
+#include "ClapTrap.hpp"
 
 int main()
 {
