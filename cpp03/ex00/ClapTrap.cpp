@@ -55,9 +55,9 @@ unsigned int	ClapTrap::getAp(void) const
 	return (this->_ap);
 }
 
-/////////////
-//overloadd//
-/////////////
+////////////
+//overload//
+////////////
 
 ClapTrap	&ClapTrap::operator=(const ClapTrap &rhs)
 {
