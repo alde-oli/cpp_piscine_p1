@@ -3,8 +3,8 @@ NAME = FF_XLII
 CXX = g++
 CXXFLAGS = -Wall -Wextra -Werror -std=c++98
 
-SRCDIR = ./
-INCDIR = ./
+SRCDIR = src
+INCDIR = include
 OBJDIR = obj
 
 GREEN = \033[0;32m
@@ -23,7 +23,7 @@ $(OBJDIR):
 
 $(NAME): $(OBJDIR) $(OBJECTS)
 	@echo -e "$(GREEN)$(BOLD)[ ok ] files compiled$(NC)"
-	@$(CXX) $(CXXFLAGS) -o $(NAME) $(OBJECTS) -I$(INCDIR)
+	@$(CXX) $(CXXFLAGS) -o $(NAME) $(OBJECTS) -I$(INCDIR) -g
 	@echo -e "$(BLUE)$(BOLD)[ ok ] $(NAME) created$(NC)"
 
 $(OBJDIR)/%.o: $(SRCDIR)/%.cpp
